@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.helpController">
+   <children>
+      <AnchorPane prefHeight="50.0" prefWidth="711.0" style="-fx-background-color: #E6E6FA; -fx-border-color: white;">
+         <children>
+            <Label layoutX="44.0" layoutY="10.0" prefHeight="29.0" prefWidth="163.0" text="DOC CONNECT" textFill="GREY">
+               <font>
+                  <Font name="Palatino Linotype Bold" size="20.0" />
+               </font>
+            </Label>
+            <Text fill="RED" layoutX="7.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+" wrappingWidth="36.684906005859375">
+               <font>
+                  <Font name="System Bold" size="50.0" />
+               </font>
+            </Text>
+            <Button layoutX="598.0" layoutY="9.0" mnemonicParsing="false" onAction="#Back" prefHeight="26.0" prefWidth="88.0" stylesheets="@style.css" text="Back" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="7.0" layoutY="50.0" prefHeight="450.0" prefWidth="186.0" style="-fx-background-color: #e6e6fa; -fx-border-color: white;">
+         <children>
+            <Button layoutX="4.0" layoutY="88.0" mnemonicParsing="false" onAction="#createAccount" prefHeight="28.0" prefWidth="152.0" stylesheets="@style.css" text="Creating an Account" />
+            <Button layoutX="4.0" layoutY="128.0" mnemonicParsing="false" onAction="#updateProfile" prefHeight="28.0" prefWidth="152.0" stylesheets="@style.css" text="Update Profile" />
+            <Button layoutX="4.0" layoutY="244.0" mnemonicParsing="false" onAction="#privacyPolicy" prefHeight="28.0" prefWidth="152.0" stylesheets="@style.css" text="Privacy Policy" />
+            <Button layoutX="4.0" layoutY="166.0" mnemonicParsing="false" onAction="#BookingAppointment" prefHeight="28.0" prefWidth="152.0" stylesheets="@style.css" text="Booking an Appointment" />
+            <Button layoutX="4.0" layoutY="204.0" mnemonicParsing="false" onAction="#customerSupport" prefHeight="28.0" prefWidth="152.0" stylesheets="@style.css" text="Customer Support" />
+            <Button layoutX="4.0" layoutY="279.0" mnemonicParsing="false" onAction="#contactUs" prefHeight="28.0" prefWidth="152.0" stylesheets="@style.css" text="Contact Us" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="174.0" layoutY="50.0" prefHeight="450.0" prefWidth="511.0" style="-fx-background-color: white;">
+         <children>
+            <TextArea fx:id="Feild" layoutX="35.0" layoutY="23.0" prefHeight="403.0" prefWidth="442.0" style="-fx-border-color: #e6e6fa;" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

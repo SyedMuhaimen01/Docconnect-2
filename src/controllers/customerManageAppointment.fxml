@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.customerManageAppointmentController" >
+   <center>
+      <AnchorPane prefHeight="289.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane layoutX="200.0" layoutY="155.0" prefHeight="77.0" prefWidth="200.0" style="-fx-background-color: #e6e6fa;">
+               <children>
+                  <Button layoutY="1.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="199.0" style="-fx-background-color: #d3d3d3; -fx-border-color: #e6e6fa;" text="View Current Appointments" />
+                  <Button layoutY="26.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="199.0" style="-fx-background-color: #d3d3d3; -fx-border-color: #e6e6fa;" text="Update Appointments" />
+                  <Button layoutY="51.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #d3d3d3; -fx-border-color: #e6e6fa;" text="Delete Appointment" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

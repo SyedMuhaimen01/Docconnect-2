@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #e6e6fa;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CenterRegisController">
+   <top>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane layoutX="156.0" layoutY="121.0" prefHeight="300.0" prefWidth="388.0" style="-fx-background-color: white;">
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" styleClass="l1" stylesheets="@style.css" text="Account Registeration" textFill="GREY">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="usernameField" layoutX="14.0" layoutY="50.0" promptText="Username" />
+                  <TextField fx:id="centerNameField" layoutX="14.0" layoutY="84.0" promptText="Center Name" />
+                  <TextField fx:id="addressField" layoutX="14.0" layoutY="118.0" promptText="Address" />
+                  <TextField fx:id="phField" layoutX="218.0" layoutY="153.0" promptText="PH #" />
+                  <TextField fx:id="emailField" layoutX="14.0" layoutY="153.0" promptText="Email" />
+                  <Button layoutX="137.0" layoutY="252.0" mnemonicParsing="false" onAction="#handleRegisterButton" prefHeight="28.0" prefWidth="95.0" styleClass="button5" stylesheets="@style.css" text="Register" />
+                  <Label fx:id="errorLabel" layoutX="180.0" layoutY="54.0" prefHeight="17.0" prefWidth="186.0" textFill="#ae0000" />
+                  <PasswordField fx:id="passwordField" layoutX="14.0" layoutY="188.0" promptText="Password" />
+                  <PasswordField fx:id="reEnterPasswordField" layoutX="218.0" layoutY="188.0" promptText="re-Enter Password" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="50.0" prefWidth="700.0" style="-fx-background-color: #e6e6fa; -fx-border-color: white; -fx-border-radius: 5px;">
+               <children>
+                  <Label layoutX="37.0" layoutY="10.0" prefHeight="29.0" prefWidth="163.0" text="DOC CONNECT" textFill="GREY">
+                     <font>
+                        <Font name="Palatino Linotype Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Button id="registerButton" fx:id="Button" layoutX="326.0" layoutY="11.0" mnemonicParsing="false" onAction="#registerOptions" prefHeight="26.0" prefWidth="88.0" stylesheets="@style.css" text="Register" />
+                  <TextField layoutX="509.0" layoutY="13.0" prefHeight="25.0" prefWidth="117.0" promptText="Search  . . ." style="-fx-border-color: black; -fx-border-radius: 5px 5px 5px 5px;" />
+                  <Button layoutX="627.0" layoutY="14.0" mnemonicParsing="false" styleClass="button2" stylesheets="@style.css" text="Search">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="238.0" layoutY="12.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="88.0" stylesheets="@style.css" text="Home">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="414.0" layoutY="11.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="88.0" stylesheets="@style.css" text="Contact Us" />
+                  <Text fill="RED" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+" wrappingWidth="36.684906005859375">
+                     <font>
+                        <Font name="System Bold" size="50.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>
